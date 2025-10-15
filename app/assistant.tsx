@@ -33,25 +33,27 @@ export const Assistant = () => {
     <AssistantRuntimeProvider runtime={runtime}>
       <SidebarProvider>
         <div className="flex h-dvh w-full pr-0.5">
-          <ThreadListSidebar />
+          {/* <ThreadListSidebar /> */}
           <SidebarInset>
             <header className="flex h-16 shrink-0 items-center gap-2 border-b px-4">
-              <SidebarTrigger />
+              {/* <SidebarTrigger /> */}
               <Separator orientation="vertical" className="mr-2 h-4" />
               <Breadcrumb>
                 <BreadcrumbList>
                   <BreadcrumbItem className="hidden md:block">
                     <BreadcrumbLink
-                      href="https://www.assistant-ui.com/docs/getting-started"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      // href="https://www.assistant-ui.com/docs/getting-started"
+                      // target="_blank"
+                      // rel="noopener noreferrer"
                     >
-                      Build Your Own ChatGPT UX
+                     <div className="text-3xl font-semibold text-[#10a37f] font-[Inter] tracking-tight hover:text-[#10a37f] transition-all duration-500">
+                        MA ChatBot
+                      </div>
                     </BreadcrumbLink>
                   </BreadcrumbItem>
                   <BreadcrumbSeparator className="hidden md:block" />
                   <BreadcrumbItem>
-                    <BreadcrumbPage>Starter Template</BreadcrumbPage>
+                    {/* <BreadcrumbPage>Starter Template</BreadcrumbPage> */}
                   </BreadcrumbItem>
                 </BreadcrumbList>
               </Breadcrumb>
