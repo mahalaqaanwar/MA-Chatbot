@@ -1,0 +1,7 @@
+import mongoose from "mongoose";
+
+const ChatSchema = new mongoose.Schema({
+  message: { type: String, required: true },
+});
+
+export default mongoose.models.Chat || mongoose.model("Chat", ChatSchema);
